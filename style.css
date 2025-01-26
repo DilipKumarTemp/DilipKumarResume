@@ -340,118 +340,52 @@ footer{
 .download-resume:hover{
     opacity: 0.9;  
 }
-@media (max-width: 480px) {
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Montserrat';
-    }
 
-    .body {
-        flex-direction: column;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-    }
 
-    nav{
-        border: 2px solid red;
-        height: 100px;
-    }
 
-    .navigation {
-        border: 2px solid black;
+
+@media screen and (max-width: 480px) {
+
+    header{
         height: 90px;
-        width: 90%;
-    }
-    
-    .name{
-        height: 55%;
-        width: 90%;
-        padding: 5px;
-        border: 1px solid blue;
-    }
-    
-    .name h1{
-        font-size: 25px;
-        font-weight: 900;
-        letter-spacing: 1px;
-        word-spacing: 3px;
-    }
-    
-    .details {
-        flex-wrap: wrap;
-        /* flex-direction: column; */
-        gap: 8px;
     }
 
-    .flex a{
-        gap: 3px;
+    .navigation{
+        padding-top: 10px;
     }
 
-    header img {
-        height: 15px;
-        width: 15px;
-    }
-    
-    main img {
-        height: 40px;
-        transform: translateY(-12px);
-    }
-    
-    .section {
-        width: 100%;
-        margin: 10px 0;
-    }
-   
-    hr {
-        border: 1.69px solid rebeccapurple;
-        width: 100%;
-    }
-    
-    ul{
-        list-style-position: inside;
-    }
-    
-    h3{
-        color:  rgb(23, 33, 126);
+    .navname h1{
+        font-size: 20px;
     }
 
-    .card {
-        width: 96%;
-        padding: 5px;
-    }
-
-    
-    .techskills ul li{
+    .address, .phone, .linkedin{
+        height: 90%;
+        width: 22%;
+        background-color: white;
         display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .mail{
+        height: 90%;
+        width: 29%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .address a, .phone a, .mail a, .linkedin a{
         gap: 5px;
+        font-size: 5px;
     }
 
-    .details .flex {
-        width: 100%;
-        justify-content: center;
+    header img{
+        height: 10px;
+        width: 10px;
     }
-    .footer {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-    .socialmedia {
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-    }
-    .download-resume {
-        width: 120px;
-    }
+
+
+
 }
-
-
-
-
-
-
-
