@@ -225,12 +225,26 @@ h3 {
 
 .techskills ul li {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
+.techskills ul li h4 {
+    text-decoration: underline;
+}
+/* 
 
 .techskills ul {
     padding-left: 20px;
+} */
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .techskills ul li p {
