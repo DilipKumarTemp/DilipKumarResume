@@ -367,26 +367,41 @@ footer {
     }
 
     .section{
-        width: 100%;
+        width: 90%;
     }
 
 
     .navname h1{
-        font-size: 17px;
-    }
-
-    nav{
-        height: 90px;
+        font-size: 16px;        
         word-spacing: 0px;
         line-height: 0px;
     }
 
+    nav{
+        height: 90px;
+        border: 1px solid black ;
+    }
+
     nav img{
         box-sizing: content-box;
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         padding: 2px;
         border-radius: 50%;
         border: 0.0069mm solid black;
     }
+
+    footer{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .foot{
+        flex-direction: column;
+        gap: 50px;
+        justify-content: space-between;
+    }
+    .mydetails, .download, .socialmedia{
+        width: 90%;
+    }
+
 }
