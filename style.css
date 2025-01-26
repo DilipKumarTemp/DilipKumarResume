@@ -25,7 +25,7 @@ nav {
 }
 
 
-.navname {  
+.navname {
     /* border: 1px solid maroon; */
     height: 55%;
     width: 90%;
@@ -54,7 +54,10 @@ nav {
     gap: 20px;
 }
 
-.address, .phno, .mail, .linkedin{
+.address,
+.phno,
+.mail,
+.linkedin {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +65,10 @@ nav {
     height: 90%;
 }
 
-.address a, .phno a, .mail a, .linkedin a{
+.address a,
+.phno a,
+.mail a,
+.linkedin a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,8 +93,6 @@ main img {
 
 
 
-
-
 .body {
     display: flex;
     justify-content: space-evenly;
@@ -110,18 +114,18 @@ hr {
     width: 100%;
 }
 
-ul{
+ul {
     list-style-position: inside;
 }
 
-h3{
-    color:  rgb(23, 33, 126);
+h3 {
+    color: rgb(23, 33, 126);
 }
 
 
 .card {
     width: 98%;
-    text-align: justify;    
+    text-align: justify;
     padding: 10px;
     /* border: 1px solid black; */
     display: flex;
@@ -130,11 +134,11 @@ h3{
     gap: 7px;
 }
 
-.profile P{
+.profile P {
     font-style: italic;
 }
 
-.projectdetails{
+.projectdetails {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -142,11 +146,14 @@ h3{
     gap: 17px;
 }
 
-.projectdetails h4{
+.projectdetails h4 {
     text-decoration: underline;
 }
 
-.project1, .project2, .project3, .project4{
+.project1,
+.project2,
+.project3,
+.project4 {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -155,13 +162,13 @@ h3{
     gap: 4px;
 }
 
-.projectdetails ul{
+.projectdetails ul {
     list-style-position: inside;
     padding-left: 20px;
-     text-indent: -20px;
+    text-indent: -20px;
 }
 
-.coursework ul li{
+.coursework ul li {
     color: rgb(90, 89, 89);
     font-weight: bold;
     font-style: italic;
@@ -173,30 +180,32 @@ h3{
 /* right section styling starts from here -------------------------- */
 
 
-.edudetails{
+.edudetails {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 17px;
 }
 
-.edudetails p{
+.edudetails p {
     font-style: italic;
     color: rgb(92, 83, 83);
     font-weight: bold;
 }
 
-.underline{
+.underline {
     text-decoration: underline;
 }
 
-.btech, .inter, .tenth{
+.btech,
+.inter,
+.tenth {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.skillsdetails{
+.skillsdetails {
     font-style: italic;
     display: flex;
     flex-direction: column;
@@ -204,7 +213,8 @@ h3{
     gap: 17px;
 }
 
-.techskills, .softskills{
+.techskills,
+.softskills {
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
@@ -213,33 +223,34 @@ h3{
 }
 
 
-.techskills ul li{
+.techskills ul li {
     display: flex;
     gap: 10px;
 }
 
 
-.techskills ul{
+.techskills ul {
     padding-left: 20px;
 }
-.techskills ul li p{
+
+.techskills ul li p {
     color: rgb(92, 83, 83);
     font-weight: bold;
 }
 
 
-.softskills ul{
+.softskills ul {
     font-weight: bold;
     color: rgb(92, 83, 83);
     padding-left: 20px;
 }
 
-.typing{
+.typing {
     display: flex;
     flex-direction: column;
 }
 
-.typingdetails{
+.typingdetails {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -247,18 +258,18 @@ h3{
     padding-left: 20px;
 }
 
-.interests ul{
+.interests ul {
     color: rgb(92, 83, 83);
     font-weight: bold;
     font-style: italic;
 }
 
-.refinfo p{
+.refinfo p {
     padding-left: 20px;
 }
 
 
-footer{
+footer {
     height: 20vh;
     width: 100%;
     /* border: 1px solid black; */
@@ -267,7 +278,7 @@ footer{
     align-items: center;
 }
 
-.foot{
+.foot {
     /* border: 1px solid black; */
     height: 80%;
     width: 96%;
@@ -282,7 +293,7 @@ footer{
     border-radius: 50%;
 }
 
-.mydetails{
+.mydetails {
     width: 30%;
     /* border: 1px solid black; */
     height: 82%;
@@ -291,13 +302,13 @@ footer{
     justify-content: space-evenly;
 }
 
-.myname{
+.myname {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.socialmedia{
+.socialmedia {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -307,18 +318,18 @@ footer{
     height: 82%;
 }
 
-.socialmedia img{
+.socialmedia img {
     height: 30px;
 }
 
-.smedia{
+.smedia {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.download{
+.download {
     /* border: 1px solid black; */
     width: 20%;
     height: 82%;
@@ -327,21 +338,55 @@ footer{
     justify-content: center;
 }
 
-.download-resume{
+.download-resume {
     text-decoration: none;
     color: white;
-    font-weight: bold   ;
+    font-weight: bold;
     background-color: rebeccapurple;
     height: 50px;
     width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px    
+    border-radius: 20px
 }
 
-.download-resume:hover{
-    opacity: 0.9;  
+.download-resume:hover {
+    opacity: 0.9;
 }
 
 
+
+@media (max-width: 480px) {
+    .links a h4 {
+        display: none;
+    }
+
+    .body {
+        flex-direction: column;
+    }
+
+    .section{
+        width: 90%;
+    }
+
+
+    .navname h1{
+        font-size: 20px;
+    }
+
+    nav{
+        height: 90px;
+        word-spacing: 0px;
+        line-height: 0px;
+    }
+
+    nav img{
+        box-sizing: content-box;
+        width: 15px;
+        height: 15px;
+        padding: 2px;
+        border-radius: 50%;
+        border: 0.0069mm solid black;
+    }
+}
