@@ -112,6 +112,7 @@ ul li{
     gap: 20px;
 }
 
+
 hr {
     border: 2px solid rebeccapurple;
     width: 100%;
@@ -128,6 +129,42 @@ h3 {
 .profile p{
     text-align: justify;
 }
+
+.sidebar{
+    /* border: 1px solid black; */
+    height: 45vh;
+    width: 7vw;
+    right: 0;
+    top: 100px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sidebar a{
+    text-decoration: none;
+    /* border: 1px solid black; */
+    height: 20%;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar  img{
+    box-sizing: content-box;
+    width: 13px;
+    height: 13px;
+    padding: 2px;
+    border-radius: 50%;
+    border: 0.0069mm solid black;
+}
+
+
+
+
 
 .card {
     width: 98%;
