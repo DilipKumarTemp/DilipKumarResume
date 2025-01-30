@@ -91,6 +91,9 @@ main img {
     transform: translateY(-5px);
 }
 
+ul li{
+    text-align: justify;
+}
 
 
 .body {
@@ -125,7 +128,6 @@ h3 {
 
 .card {
     width: 98%;
-    text-align: justify;
     padding: 10px;
     /* border: 1px solid black; */
     display: flex;
@@ -138,7 +140,7 @@ h3 {
     font-style: italic;
 }
 
-.projectdetails {
+.projectdetails, .experiencedetails {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -146,8 +148,18 @@ h3 {
     gap: 17px;
 }
 
-.projectdetails h4 {
+.projectdetails h4, .experiencedetails h4 {
     text-decoration: underline;
+}
+
+.experience1,
+.experience2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    font-style: italic;
+    gap: 4px;
 }
 
 .project1,
@@ -162,7 +174,7 @@ h3 {
     gap: 4px;
 }
 
-.projectdetails ul {
+.projectdetails ul, .experiencedetails ul {
     list-style-position: inside;
     padding-left: 20px;
     text-indent: -20px;
@@ -235,11 +247,11 @@ h3 {
     text-decoration: underline;
     color: rgb(92, 83, 83);
 }
-/* 
+
 
 .techskills ul {
     padding-left: 20px;
-} */
+}
 
 ul{
     display: flex;
@@ -263,6 +275,7 @@ ul{
 .typing {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .typingdetails {
@@ -273,7 +286,7 @@ ul{
     padding-left: 20px;
 }
 
-.interests ul {
+.interests ul, .languages ul {
     color: rgb(92, 83, 83);
     font-weight: bold;
     font-style: italic;
@@ -281,6 +294,7 @@ ul{
 
 .refinfo p {
     padding-left: 20px;
+    font-style: italic;
 }
 
 
