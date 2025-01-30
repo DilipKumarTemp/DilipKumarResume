@@ -427,7 +427,13 @@ footer {
 
 
 @media (max-width: 480px) {
-    .links a h4 {
+
+    
+    .sidebar{
+        display:flex;
+    }
+    
+    .links {
         display: none;
     }
 
