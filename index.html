@@ -11,9 +11,8 @@
     </style>
 
     <style>
-        #chatbot-toggler {
+        #chatbot-togg {
             position: fixed;
-            z-index: 99;
             right: 35px;
             bottom: 30px;
             border-radius: 50%;
@@ -28,48 +27,48 @@
             transition: all 0.3s ease;
         }
 
-        body.show-chatbot #chatbot-toggler {
+        body.show-chatbot #chatbot-togg {
             transform: rotate(180deg);
         }
 
 
-        #chatbot-toggler span {
+        #chatbot-togg span {
             position: absolute;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        #chatbot-toggler span img {
+        #chatbot-togg span img {
             height: 50px;
             width: 50px;
         }
 
-        #chatbot-toggler span:first-child {
+        #chatbot-togg span:first-child {
             opacity: 1;
             transition: opacity 0.3s ease;
         }
 
-        #chatbot-toggler span:last-child {
+        #chatbot-togg span:last-child {
             opacity: 0;
             transition: opacity 0.3s ease;
         }
 
-        body.show-chatbot #chatbot-toggler span:first-child {
+        body.show-chatbot #chatbot-togg span:first-child {
             opacity: 0;
         }
 
-        body.show-chatbot #chatbot-toggler span:last-child {
+        body.show-chatbot #chatbot-togg span:last-child {
             opacity: 1;
         }
 
 
-        .chatbot-popup {
+        .chatbot-pop {
             position: fixed;
             right: 35px;
             bottom: 100px;
             width: 450px;
-            height: 550px;
+            height: 520px;
             background: #fff;
             overflow: hidden;
             border-radius: 15px;
@@ -82,12 +81,47 @@
             opacity: 0;
         }
 
-        body.show-chatbot .chatbot-popup {
+        body.show-chatbot .chatbot-pop {
             transform: scale(1);
             opacity: 1;
             pointer-events: auto;
 
         }
+
+        
+@media (max-width: 520px)
+{
+    #chatbot-toggler{
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .chatbot-popup{
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .chatbot-popup .chat-header{
+        padding: 12px 15px;
+    }
+
+    .chat-body {
+        height: calc((90% )-(55px));
+        padding: 25px 15px;
+    }
+
+    .chat-footer{
+        padding: 10px 15px 15px;
+    }
+ 
+}
+
+
+        
+        
     </style>
 
    
