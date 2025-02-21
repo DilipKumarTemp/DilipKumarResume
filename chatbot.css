@@ -72,17 +72,17 @@ body.show-chatbot #chatbot-toggler span:last-child{
     right: 35px;
     bottom: 100px;
     width: 450px;
-    height: 550px;
+    /* height: 550px; */
     background: #fff;
     overflow: hidden;
     border-radius: 15px;
-    pointer-events: none;
+    /* pointer-events: none; */
     box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
     0 32px 64px -48px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
-    transform: scale(0);
+    /* transform: scale(0); */
     transform-origin: bottom right;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 body.show-chatbot .chatbot-popup{
@@ -156,14 +156,14 @@ body.show-chatbot .chatbot-popup{
 }
 
 .chat-body{
-    max-height: 320px;
+    height: 320px;
     padding: 25px 22px;
     margin-bottom: 0px;
     display: flex;
     gap: 20px;
     overflow-y: scroll;
     flex-direction: column;
-    border: 2px solid;
+    /* border: 2px solid; */
 }
 
 
@@ -282,13 +282,14 @@ body.show-chatbot .chatbot-popup{
 
 
 .chat-footer{
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     align-items: center;
     background: #fff;
     padding: 15px 22px 20px;
-    bottom: 0px;
-    border: 1px solid;
+    /* bottom: 0px; */
+    /* border: 1px solid; */
+    margin-bottom: -5px;
 }
 
 .chat-footer .chat-form {
@@ -310,6 +311,8 @@ body.show-chatbot .chatbot-popup{
     resize: none;
     height: 47px;
     width: 100%;
+    max-height: 100px;
+    white-space: pre-line;
     font-size: 0.95rem;
     padding: 14px 0 13px 33px;
     border-radius: inherit;
@@ -318,6 +321,12 @@ body.show-chatbot .chatbot-popup{
     display: flex; 
     align-items: center;
     justify-content: center;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.chat-form .message-input:hover{
+    scrollbar-color: #2264bd transparent;
 }
 
 .chat-form .chat-controls{
@@ -371,9 +380,9 @@ body.show-chatbot .chatbot-popup{
 }
 
 .suggestions{
-    margin: 10px 10px 0px 10px;
-    border: 1px solid black;
-    height: 60px;
+    margin: 10px 10px 5px 10px;
+    /* border: 1px solid black; */
+    height: 50px;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -382,11 +391,13 @@ body.show-chatbot .chatbot-popup{
 }
 
 .suggestions-text{
-    background-color: #f1f1f1;
+    background-color: #d4e5fc;
     padding: 5px 10px;
     border-radius: 5px;
-    border: 0.001mm solid #c1c1c1;
+    border: 0.001mm solid #2264bd;
     font-size: 14px;
+    margin-bottom: 2px;
+    cursor: pointer;
 }
 
 
