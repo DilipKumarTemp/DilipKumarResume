@@ -10,6 +10,85 @@
         @import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 
+    <style>
+        #chatbot-toggler {
+            position: fixed;
+            right: 35px;
+            bottom: 30px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            width: 60px;
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+
+        body.show-chatbot #chatbot-toggler {
+            transform: rotate(180deg);
+        }
+
+
+        #chatbot-toggler span {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #chatbot-toggler span img {
+            height: 50px;
+            width: 50px;
+        }
+
+        #chatbot-toggler span:first-child {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        #chatbot-toggler span:last-child {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        body.show-chatbot #chatbot-toggler span:first-child {
+            opacity: 0;
+        }
+
+        body.show-chatbot #chatbot-toggler span:last-child {
+            opacity: 1;
+        }
+
+
+        .chatbot-popup {
+            position: fixed;
+            right: 35px;
+            bottom: 100px;
+            width: 450px;
+            height: 550px;
+            background: #fff;
+            overflow: hidden;
+            border-radius: 15px;
+            pointer-events: none;
+            box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -48px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+            transform: scale(0);
+            transform-origin: bottom right;
+            opacity: 0;
+        }
+
+        body.show-chatbot .chatbot-popup {
+            transform: scale(1);
+            opacity: 1;
+            pointer-events: auto;
+
+        }
+    </style>
+
    
 </head>
 
@@ -313,6 +392,26 @@
             </div>
         </div>
     </footer>
+
+
+     <iframe class="chatbot-popup" src="" frameborder="0"></iframe>
+
+    <button id="chatbot-toggler">
+        <span><img src="chatbotlogo.svg" alt="chatbotlogo"></span>
+        <span><img src="close.svg" alt="closelogo"></span>
+    </button>
+
+    <script>
+
+
+        const chatbotToggler = document.querySelector("#chatbot-toggler");
+        const closeChatbot = document.querySelector("#close-chatbot");
+
+
+        chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+        closeChatbot.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+
+    </script>
 
 
 </body>
