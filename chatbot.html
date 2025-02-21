@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatbot website</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+
+<body>
+
+<!--     <button id="chatbot-toggler">
+        <span><img src="chatbotlogo.svg" alt="chatbotlogo"></span>
+        <span><img src="close.svg" alt="closelogo"></span>
+    </button>
+ -->
+
+    <div class="chatbot-popup">
+        <div class="chat-header">
+            <div class="header-info">
+                <div class="chatbot-logo"><img src="nmrecLogo.svg" alt="nmrecLogo"></div>
+                <h2 class="logo-text">Ask-NMREC</h2>
+            </div>
+            <button id="close-chatbot" type="button"><img src="arrowDown.svg" alt="arrowdown"></button>
+        </div>
+
+        <div class="chat-body">
+            <div class="message bot-message">
+                <div class="bot-avatar"><img src="nmrecLogo.svg" alt="nmrecLogo"></div>
+                <div class="message-text">👋 Hi! I am NMREC-AI, ask me anything about NMREC!</div>
+            </div>
+            <!--
+            <div class="message user-message">
+                <div class="message-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+             <div class="message bot-message thinking ">
+                <div class="bot-avatar"><img style="height: 35px;" src="nmrecLogo.svg" alt="nmrecLogo"></div>
+                <div class="message-text">
+                    <div class="thinking-indicator">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="suggestions">
+            <button class="suggestions-text">Why NMREC?</button>
+            <button class="suggestions-text">How can I apply for admission to NMREC?</button>
+            <button class="suggestions-text">What programs and courses does NMREC offer?</button>
+            <button class="suggestions-text">How can I download my hall ticket?</button>
+            <button class="suggestions-text">What is the fee structure for different programs?</button>
+            <button class="suggestions-text">What companies visit NMREC for placements?</button>
+            <button class="suggestions-text">What clubs and student organizations are available?</button>
+        </div>
+
+        <div class="chat-footer">
+            <form action="#" class="chat-form">
+                <textarea  class="message-input" required placeholder="Enter your query here..."></textarea>
+                <div class="chat-controls">
+                    <!-- <button  type="button"><img src="smile.svg" alt=""></button> -->
+                    <button id="send-message" type="button"><img src="send.svg" alt="sendimage"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="chatbot.js"></script>
+
+</body>
+
+</html>
