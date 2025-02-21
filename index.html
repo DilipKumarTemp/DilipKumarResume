@@ -25,6 +25,7 @@
             width: 60px;
             background: transparent;
             transition: all 0.3s ease;
+            z-index: 99;
         }
 
         body.show-chatbot #chatbot-togg {
@@ -429,9 +430,9 @@
     </footer>
 
 
-     <iframe class="chatbot-popup" src="chatbot.html" frameborder="0"></iframe>
+     <iframe class="chatbot-pop" src="chatbot.html" frameborder="0"></iframe>
 
-    <button id="chatbot-toggler">
+    <button id="chatbot-togg">
         <span><img src="chatbotlogo.svg" alt="chatbotlogo"></span>
         <span><img src="close.svg" alt="closelogo"></span>
     </button>
@@ -439,11 +440,11 @@
     <script>
 
 
-        const chatbotToggler = document.querySelector("#chatbot-toggler");
+        const chatbottogg = document.querySelector("#chatbot-togg");
         const closeChatbot = document.querySelector("#close-chatbot");
 
 
-        chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+        chatbottogg.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
         closeChatbot.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 
     </script>
