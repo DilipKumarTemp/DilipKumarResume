@@ -10,7 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 
-    <style>
+      <style>
         #chatbot-togg {
             position: fixed;
             right: 35px;
@@ -25,7 +25,6 @@
             width: 60px;
             background: transparent;
             transition: all 0.3s ease;
-            z-index: 99;
         }
 
         body.show-chatbot #chatbot-togg {
@@ -69,7 +68,7 @@
             right: 35px;
             bottom: 100px;
             width: 450px;
-            height: 520px;
+            height: 525px;
             background: #fff;
             overflow: hidden;
             border-radius: 15px;
@@ -82,49 +81,34 @@
             opacity: 0;
         }
 
+
         body.show-chatbot .chatbot-pop {
             transform: scale(1);
             opacity: 1;
             pointer-events: auto;
             z-index: 69;
+
         }
 
-        
-@media (max-width: 520px)
-{
-    #chatbot-toggler{
-        right: 20px;
-        bottom: 20px;
-    }
+        @media (max-width: 520px) {
 
-    .chatbot-popup{
-        right: 0;
-        bottom: 0;
-        height: 100%;
-        border-radius: 0px;
-        width: 100%;
-    }
+            #chatbot-togg {
+                right: 10px;
+                bottom: 10px;
+            }
 
-    .chatbot-popup .chat-header{
-        padding: 12px 15px;
-    }
-
-    .chat-body {
-        height: calc((90% )-(55px));
-        padding: 25px 15px;
-    }
-
-    .chat-footer{
-        padding: 10px 15px 15px;
-    }
- 
-}
-
-
-        
-        
+            .chatbot-pop {
+                width: 300px;
+                /* height: calc((100%)-(150px)); */
+                border-radius: 10px;
+                z-index: 69;
+                position: fixed;
+                bottom: 75px;
+                padding: 12px 15px;
+                overflow-x: scroll;
+            }
+        }
     </style>
-
    
 </head>
 
